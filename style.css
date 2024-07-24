@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(2, 2, 17);
+    color: aliceblue;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    background-color: rgb(29, 7, 51);
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav:hover {
+    background-color: rgba(29, 7, 51, 0.9);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-inline: 22px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.main {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.main img {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.main img:hover {
+    transform: scale(1.05);
+}
+
+.main h1 {
+    font-size: 76px;
+}
+
+.main p {
+    font-size: 23px;
+    margin-top: 22px;
+}
+
+.main button {
+    width: 140px;
+    height: 40px;
+    background-color: aqua;
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.main button:hover {
+    background-color: darkcyan;
+    transform: scale(1.1);
+}
+
+.maintext h3 {
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+.head {
+    text-align: center;
+    padding: 88px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    text-align: center;
+}
+
+.about img {
+    width: 300px;
+    height: 310px;
+    border-radius: 50%;
+    border: 6px solid aqua;
+    transition: transform 0.3s;
+}
+
+.about img:hover {
+    transform: scale(1.1);
+}
+
+.about p {
+    margin-top: 22px;
+    font-size: 18px;
+}
+
+.about h1 {
+    font-size: 43px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btns button {
+    padding: 11px;
+    margin-top: 11px;
+    border: none;
+    margin-inline: 20px;
+    background-color: red;
+    font-size: 20px;
+    color: aliceblue;
+    border-radius: 2px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btns button:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.serviceCard {
+    width: 300px;
+    height: 420px;
+    padding: 22px;
+    background-color: gray;
+    color: white;
+    margin-inline: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.serviceCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.serviceCard p {
+    margin-top: 22px;
+}
+
+.serviceCard h1 {
+    margin-top: 22px;
+}
+
+.serviceCard button {
+    margin-top: 32px;
+    width: 100px;
+    height: 33px;
+    border: none;
+    background-color: pink;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.serviceCard button:hover {
+    background-color: deeppink;
+    transform: scale(1.1);
+}
+
+.serviceCard i {
+    font-size: 63px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.workcard {
+    margin-inline: 22px;
+    margin-top: 42px;
+    text-align: center;
+}
+
+.workcard img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    margin-inline: 22px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.workcard img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.workcard p {
+    margin-top: 11px;
+}
+
+.workcard a {
+    padding: 6px 22px;
+    background-color: pink;
+    text-decoration: none;
+    position: relative;
+    top: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.workcard a:hover {
+    background-color: deeppink;
+    transform: scale(1.1);
+}
+
+.contact {
+    margin: auto;
+    width: 400px;
+    flex-wrap: wrap;
+    padding: 22px;
+    background-color: gray;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact input {
+    width: 90%;
+    margin-top: 22px;
+    padding: 11px;
+    height: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    width: 96%;
+    font-size: 20px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 5px;
+    padding: 11px;
+}
+
+.contact button {
+    width: 100px;
+    height: 33px;
+    background-color: pink;
+    border: none;
+    color: white;
+    margin-top: 22px;
+    font-size: 19px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact button:hover {
+    background-color: deeppink;
+    transform: scale(1.1);
+}
+
+.icons {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 52px;
+    transition: transform 0.3s;
+}
+
+.icons i {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icons i:hover {
+    color: aqua;
+    transform: scale(1.2);
+}
+
+.text {
+    text-align: center;
+}
+
+.text p {
+    margin-top: 11px;
+    font-size: 22px;
+}
+
+.footer {
+    padding: 33px;
+    text-align: center;
+    background-color: rgb(29, 7, 51);
+}
+
+@media screen and (max-width: 1100px) {
+    .main {
+        text-align: center;
+        display: block;
+    }
+    .contact {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .workcard img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    ul {
+        display: none;
+    }
+}
